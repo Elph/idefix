@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "idefix", "src\idefix\idefix.csproj", "{3D3805C7-B656-4DF7-A70F-5B42A5A2164C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7BAD6B05-6631-42D9-BA31-C2EA9672E1A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{61745965-27FE-4604-9B91-C5EF4F79E8A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "idefix.Tests", "tests\idefix.Tests\idefix.Tests.csproj", "{19E8C292-4C17-43DB-A58F-5422AB451829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D3805C7-B656-4DF7-A70F-5B42A5A2164C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3805C7-B656-4DF7-A70F-5B42A5A2164C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3805C7-B656-4DF7-A70F-5B42A5A2164C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3805C7-B656-4DF7-A70F-5B42A5A2164C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E8C292-4C17-43DB-A58F-5422AB451829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E8C292-4C17-43DB-A58F-5422AB451829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E8C292-4C17-43DB-A58F-5422AB451829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E8C292-4C17-43DB-A58F-5422AB451829}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D3805C7-B656-4DF7-A70F-5B42A5A2164C} = {7BAD6B05-6631-42D9-BA31-C2EA9672E1A5}
+		{19E8C292-4C17-43DB-A58F-5422AB451829} = {61745965-27FE-4604-9B91-C5EF4F79E8A5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E22DC937-0161-4CCB-8AE3-1559DB0E4537}
+	EndGlobalSection
+EndGlobal

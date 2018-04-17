@@ -1,0 +1,20 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+pull_requests:
+  do_not_increment_build_number: true
+
+environment:
+  DOCKER_USER:
+    secure: ZkwzM7VDEqpgNJOYGmMmHQ==
+  DOCKER_PASS:
+    secure: nw9maPBcUtbbzZSj+9Bj+OZukl0b97+EtrkTXkOSA3o=
+
+install:
+  - docker version
+
+build_script:
+  - docker build -t elph/idefix .
+
+deploy_script:
+  - docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS"
+  - docker push elph/idefix
