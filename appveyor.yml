@@ -16,5 +16,5 @@ build_script:
   - docker build -t elph/idefix .
 
 deploy_script:
-  - docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS"
-  - docker push elph/idefix
+  - ps: docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS"
+  - ps: docker push elph/idefix
