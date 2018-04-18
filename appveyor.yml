@@ -10,10 +10,10 @@ environment:
     secure: nw9maPBcUtbbzZSj+9Bj+OZukl0b97+EtrkTXkOSA3o=
 
 install:
-  - docker version
+  - ps: docker version
 
 build_script:
-  - docker build -t elph/idefix .
+  - ps: docker build -t elph/idefix .
 
 deploy_script:
   - ps: docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS"
