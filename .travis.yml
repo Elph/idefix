@@ -1,0 +1,8 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t elph/idefix .
+  - docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+  - docker push elph/idefix
