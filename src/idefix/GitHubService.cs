@@ -34,7 +34,7 @@ namespace idefix
                 var releases = await _client.Repository.Release.GetAll(owner, name);
                 return releases
                     .Where(_ => IsPrefixed(_.TagName, prefix))
-                    .OrderByDescending(_ => _.TagName)
+                    .OrderByDescending(_ => _.PublishedAt)
                     .FirstOrDefault();
             }
             catch (NotFoundException)
